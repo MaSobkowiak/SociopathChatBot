@@ -88,6 +88,8 @@ def start_chating(bot):
 def start_video(debug):
     filename_base = datetime.now().strftime("%H_%M_%S")
     n = 0 
+    if(not Path(Path.joinpath(Path().cwd(), "data")).is_dir()):
+        Path(Path.joinpath(Path().cwd(), "data")).mkdir()
     
     model = setup_face_emotion()
 

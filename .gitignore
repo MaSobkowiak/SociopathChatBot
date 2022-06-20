@@ -1,3 +1,4 @@
 data/
 models/Case_3.h5
 venv/*
+__pycache__/
